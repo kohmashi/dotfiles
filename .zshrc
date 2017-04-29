@@ -4,11 +4,15 @@
 #export PATH=/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/:$PATH
 #export PATH="$HOME/.rbenv/shims:$PATH"   # Ruby on Rails
 
+export PATH=$HOME/bin:$PATH
+
 alias ll='ls -l'
 alias la='ls -al'
 alias l='ls'
 alias tm='tmux'
 alias j='jobs'
+alias po='popd'
+alias pu='pushd'
 
 alias pc='ssh 192.168.1.24'
 alias centos='ssh 192.168.0.9'

@@ -27,3 +27,19 @@ ln -s $WORKDIR/doc ~/
 ln -s $WORKDIR/bin ~/
 ln -s $WORKDIR/etc ~/
 
+#------------------------------
+# Install Packages
+#------------------------------
+# Basic
+yum install tmux
+yum install ftp
+yum install wget
+
+yum install chrony
+systemctl status chronyd.service
+systemctl start chronyd.service
+chronyc sources
+
+# pukiwiki
+yum install php
+
