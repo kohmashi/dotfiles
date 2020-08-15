@@ -31,15 +31,15 @@ ln -s $WORKDIR/etc ~/
 # Install Packages
 #------------------------------
 # Basic
-yum install tmux
-yum install ftp
-yum install wget
+sudo yum install -y tmux
+sudo yum install -y ftp
+sudo yum install -y wget
 
-yum install chrony
+sudo yum install -y chrony
 systemctl status chronyd.service
 systemctl start chronyd.service
 chronyc sources
 
 # pukiwiki
-yum install php
+#sudo yum install -y php
 
