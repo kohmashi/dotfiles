@@ -111,4 +111,12 @@ On_IWhite='\e[0;107m'   # White
 # $
 PS1="[\[$Blue\]\u\[$White\]@\[$Yellow\]\h:\[$Green\] \w\[$White\]]\n$ "
 
+########### ########## ########## ##########
+## Python
+########### ########## ########## ##########
+# for pyenv
+export PATH="/home/ec2-user/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 
